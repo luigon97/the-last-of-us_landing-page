@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cabecalho {
+    background-color: #1b1b1b;
+    min-height: 10vh;
+    margin: auto;
+    padding: 1.3rem 0rem;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__logo {
+    flex-grow: 3;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.menu__logo img {
+    color: white;
+    height: 70px;
+}
+
+.menu__lista {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__item {
+    list-style-type: none;
+    padding-right: 60px;
+    transition-duration: 0.3s
+}
+
+.menu__item:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.menu__item a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.principal {
+    background: url('https://images5.alphacoders.com/446/446450.jpg') no-repeat top center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.principal__container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: calc(100vh - 222px);
+    width: 100%;
+}
+
+.principal__container .info {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 12px;
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.info {
+    width: 40%;
+}
+
+.info h1 {
+    font-size: 8em;
+    padding: 20px;
+    text-align: center;
+}
+
+.info p {
+    line-height: 2rem;
+}
+
+.secundario {
+    background: url('https://files.meiobit.com/wp-content/uploads/2020/06/20200622the-last-of-us-part-2.jpg')no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.secundario__container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: calc(100vh - 222px);
+    width: 100%;
+}
+
+.secundario__container .info {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 12px;
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.rodape {
+    align-items: center;
+    background-color: #1b1b1b;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape span:hover {
+    transform: scale(1.1);
+}
